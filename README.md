@@ -42,15 +42,15 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 
 1. Create a new repository on GitHub for your Rails application.
 1. Build your application. Make sure to commit early and commit often. Commit messages should be meaningful (clearly describe what you're doing in the commit) and accurate (there should be nothing in the commit that doesn't match the description in the commit message). Good rule of thumb is to commit every 3-7 mins of actual coding time. Most of your commits should have under 15 lines of code and a 2 line commit is perfectly acceptable. **This is important and you'll be graded on this**.
-1. Add the spec.md from this repo to your project. Then make sure to check each box (replace the space between the square braces with an x) and write next to each one how you've met the requirement.
+1. Add the spec.md from this repo to your project. Then check each box (replace the space between the square braces with an x) and write next to each one how you've met the requirement.
 1. Write a `README.md` which includes an application description and installation guide (e.g. fork and clone repo, migrate db, bundle install, etc).
 
 ### Be Prepared to:
 
-1. Explain your code from execution point to exit point. 5-10 minutes
-1. Run down your `spec.md` with how you've met each criteria. 2-5 minutes
+1. Walk through how someone would use your application. 5 minutes.
+1. Run down each item in your `spec.md` and explain how you've met each criteria. 2-5 minutes
 1. Refactor code. 20-30 minutes
-1. Extend the application with a new feature, more data, a different domain etc. 20-30 minutes
+1. Extend the application with a new feature, more data, etc. 20-30 minutes
 1. Submit an improved version.
 
 #### Be scrappy.
