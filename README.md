@@ -22,7 +22,7 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 
 8. Your forms should correctly display validation errors. Your fields should be enclosed within a fields_with_errors class and error messages describing the validation failures must be present within the view.
 
-9. Your application must be, within reason, a DRY (Do-Not-Repeat-Yourself) Rails app. Logic present in your controllers should be encapsulated as methods in your models. Your views should use helper methods and partials to be as logic-less as possible. Follow patterns in the [Rails Style Guide](https://github.com/bbatsov/rails-style-guide) and the [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide).
+9. Your application must be, within reason, a DRY (Don't-Repeat-Yourself) Rails app. Logic present in your controllers should be encapsulated as methods in your models. Your views should use helper methods and partials to be as logic-less as possible. Follow patterns in the [Rails Style Guide](https://github.com/bbatsov/rails-style-guide) and the [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide).
 
 10. **Do not** use scaffolding to build your project. Your goal here is to learn. Scaffold is a way to get up and running quickly, but learning a lot is not one of the benefits of scaffolding. That’s why we do not allow the use of scaffolding for projects.
 
@@ -31,17 +31,6 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 - A Recipe Manager - Should provide the ability to browse recipes by different filters such as date created, ingredient count, rating, comments, whatever your domain provides. Additionally ingredients would need to be unique so that the first user that adds Chicken to their recipe would create the canonical (or atomic/unique/individual) instance of Chicken (the only row to ever have the name Chicken in the ingredients table). This will force a join model between ingredients and recipes and provide an easy way to group recipes by ingredients, which would be a great view to implement. Associating some user-centric data regarding recipes such as ratings or comments would further fill out the domain and provide some great learning experiences.
 
 - A Group Task Manager - An application that allowed the creation of task lists with individual tasks that can be assigned to a user would flex the majority of the requirements of this assessment. You would be able to create a list of tasks, add tasks to that list, and assign those tasks to a user.
-
-lists
-users
-tasks
-  user_id
-  list_id
-  status
-  due_date
-tags
-task_tags
-tag_id task_id
 
 ### Restricted Domains
 
@@ -54,24 +43,19 @@ tag_id task_id
 1. Create a new repository on GitHub for your Rails application.
 1. Build your application. Make sure to commit early and commit often. Commit messages should be meaningful (clearly describe what you're doing in the commit) and accurate (there should be nothing in the commit that doesn't match the description in the commit message). Good rule of thumb is to commit every 3-7 mins of actual coding time. Most of your commits should have under 15 lines of code and a 2 line commit is perfectly acceptable. **This is important and you'll be graded on this**.
 1. Add the spec.md from this repo to your project. Then make sure to check each box (replace the space between the square braces with an x) and write next to each one how you've met the requirement.
-1. Write a README.md. Which includes: Application description, Installation guide (e.g. fork and clone repo, migrate db, bundle install, etc), Contributors guide (e.g. file an issue, file an issue with a pull request, etc), Licensing statement (e.g. This project has been licensed under the MIT open source license.)
-1. [Fill out this checklist.](https://docs.google.com/forms/d/1QlU2-UQNSjlv2Tf2yP8oDsduMobK_1w0ZFXaTpywMCk/)
+1. Write a `README.md` which includes an application description and installation guide (e.g. fork and clone repo, migrate db, bundle install, etc).
 
 ### Be Prepared to:
 
-1. Explain your code from execution point to exit point. We're making sure you wrote it and understand how it works, nothing else. 5-10 minutes
-2. Write tests together. You'll be responsible for making tests pass, not writing test code. However, you'll be expected to provide expected return data of methods. You'll need to know how your code should work, not rspec or testing. 20-30 minutes
-3. Refactor code. 20-30 minutes
-4. Extend the application with a new feature, more data, a different domain etc. 20-30 minutes
-5. Submit an improved version.
-
-### What to expect from the instructor review
-
-Project reviews are focused on preparing you for technical interviews. Treat project reviews as if they were technical interviews, in both attitude and technical presentation. Starting with this project, your instructor will deliberately give you a more challenging project review, to give you a better sense of the kind of experience and pressure that you experience during a real technical interview. Believe it or not, almost all technical interviewers really do want you to succeed, and we'll work with you as many times as necessary to get you through the review if you don't nail it the first time (which is quite common and completely OK). However, we will potentially give you a hard time, cut you off, push you on your use of vocabulary and/or your coding choices. We want to try to give you a sense of what a coding interview might be like, so you build the confidence to describe your app and to write code even in a higher pressure, slightly more adversarial environment.
+1. Explain your code from execution point to exit point. 5-10 minutes
+1. Run down your `spec.md` with how you've met each criteria. 2-5 minutes
+1. Refactor code. 20-30 minutes
+1. Extend the application with a new feature, more data, a different domain etc. 20-30 minutes
+1. Submit an improved version.
 
 #### Be scrappy.
 - If you make a mistake, correct yourself.
-- Think on your feet. We will expect you to be able to explain development concepts to us, as well as expanding on concepts that you have already implemented, but you’ll also have the opportunity to look things up while you're live coding.
+- Think on your feet. We will expect you to be able to explain development concepts to us, as well as expanding on concepts that you have already implemented, but you’ll also have the opportunity to look things up during the review.
 
 #### Make no little plans.
 - Approach live coding with a constructive attitude. You might feel nervous or uncertain, but as long as you are familiar with the section material you should be able to reason your way to a solution.
@@ -90,5 +74,3 @@ Project reviews are focused on preparing you for technical interviews. Treat pro
 - Use the best technical vocabulary you can. You will be expected to present yourself as a competent Rails developer.
 - Explain the details - this is your application, you should have a very thorough understanding of how each piece works.
 - Curiosity and willingness to learn are hugely valued in our industry. If there are things you don’t understand, then ask questions at the end of the review for more information. Your instructor will be able to point you to the appropriate section lead or technical coach for more information.
-- Pretend you’re interviewing for a job as a Rails developer. We’re looking for competent, passionate people who are excited to learn, build, and grow. You won’t be expected to be an expert, but people who will be good to work with.
-
