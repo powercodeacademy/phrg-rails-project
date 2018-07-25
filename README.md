@@ -81,7 +81,7 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 
 Should you feel you have everything done that meets the requirements above, here are some additions you can make to your project:
 
-- Add tests. Start by adding `rspec` to your `Gemfile` and initializing it. Begin by adding unit tests for your Models. Before you start, reach out to an instructor about getting some guidance for appropriate tests to add.
+- Add tests. Start by adding `rspec` to your `Gemfile`, initializing it, and begin adding unit tests for your Models. Before you start, reach out to an instructor about getting some guidance for appropriate tests to add.
 
 - Add authorization to your application. In addition to a normal User, add a type of user with priveleges, like an Administrator. How might this difference in User type be stored?
 
