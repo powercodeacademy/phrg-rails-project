@@ -22,3 +22,5 @@ Confirm:
 - [ ] Views use helper methods if appropriate
 - [ ] Views use partials if appropriate
 - [ ] Conforms to Nitro Ruby linting rules
+
+If you've added any Bonus functionality to your application, please describe it below:

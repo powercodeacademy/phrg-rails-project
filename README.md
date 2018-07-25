@@ -76,3 +76,15 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 - Use the best technical vocabulary you can. You will be expected to present yourself as a competent Rails developer.
 - Explain the details - this is your application, you should have a very thorough understanding of how each piece works.
 - Curiosity and willingness to learn are hugely valued in our industry. If there are things you don’t understand, then ask questions at the end of the review for more information. Your instructor will be able to point you to the appropriate section lead or technical coach for more information.
+
+## Bonus work
+
+Should you feel you have everything done that meets the requirements above, here are some additions you can make to your project:
+
+- Add tests. Start by adding `rspec` to your `Gemfile` and initializing it. Begin by adding unit tests for your Models. Before you start, reach out to an instructor about getting some guidance for appropriate tests to add.
+
+- Add authorization to your application. In addition to a normal User, add a type of user with priveleges, like an Administrator. How might this difference in User type be stored?
+
+- Research (Acts as State Machine)[https://github.com/aasm/aasm] and see if it could be useful in your application. Nitro uses this library, so it's worth the investigation and time to apply it to your work.
+
+- Ask an instructor to review what you have done and see what suggestions they may have for improvements.
