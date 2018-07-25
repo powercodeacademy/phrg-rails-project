@@ -83,7 +83,7 @@ Should you feel you have everything done that meets the requirements above, here
 
 - Add tests. Start by adding `rspec` to your `Gemfile`, initializing it, and begin adding unit tests for your Models. Before you start, reach out to an instructor about getting some guidance for appropriate tests to add.
 
-- Add authorization to your application. In addition to a normal User, add a type of user with priveleges, like an Administrator. How might this difference in User type be stored?
+- Add authorization to your application. In addition to a normal User, add a type of user with priveleges, like an Administrator. How might this difference in User type be stored? Nitro uses the [CanCanCan](https://github.com/CanCanCommunity/cancancan) library for authorization. Perhaps your project can too?
 
 - Research [Acts as State Machine](https://github.com/aasm/aasm) and see if it could be useful in your application. Nitro uses this library, so it's worth the investigation and time to apply it to your work.
 
