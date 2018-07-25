@@ -85,6 +85,6 @@ Should you feel you have everything done that meets the requirements above, here
 
 - Add authorization to your application. In addition to a normal User, add a type of user with priveleges, like an Administrator. How might this difference in User type be stored?
 
-- Research (Acts as State Machine)[https://github.com/aasm/aasm] and see if it could be useful in your application. Nitro uses this library, so it's worth the investigation and time to apply it to your work.
+- Research [Acts as State Machine](https://github.com/aasm/aasm) and see if it could be useful in your application. Nitro uses this library, so it's worth the investigation and time to apply it to your work.
 
 - Ask an instructor to review what you have done and see what suggestions they may have for improvements.
