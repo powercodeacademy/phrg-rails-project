@@ -49,7 +49,7 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 
 ### Be Prepared to:
 
-1. Walk through how someone would use your application. 5 minutes.
+1. Give minimal description of application, then have the reveiwer walk through it. 5 minutes.
 1. Run down each item in your `spec.md` and explain how you've met each criteria. 2-5 minutes
 1. Refactor code. 20-30 minutes
 1. Extend the application with a new feature, more data, etc. 20-30 minutes
