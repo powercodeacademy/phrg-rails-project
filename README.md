@@ -12,9 +12,7 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 
 3. Your models should include reasonable validations for the simple attributes. You don't need to add every possible validation or duplicates, such as presence and a minimum length, but the models should defend against invalid data.
 
-4. You must include at least one class level ActiveRecord scope methods. To some extent these class scopes can be added to power a specific individual feature, such as "My Overdue Tasks" in a TODO application, scoping all tasks for the user by a datetime scope for overdue items, `@user.tasks.overdue`. Reports make for a good usage of class scopes, such as "Most Valuable Cart by Customer" where the code would implement a `Cart.most_valuable` and `Cart.by_customer` which could be combined as `Cart.most_valuable.by_customer(@customer)`.
-
-Scopes have not been covered in a lesson or lab, but they are conceptually and syntactically simple. [Read the Rails documentation to discover how to write a scope](https://guides.rubyonrails.org/active_record_querying.html#scopes).
+4. You must include at least one class level ActiveRecord scope methods. Scopes have not been covered in a lesson or lab, but they are conceptually and syntactically simple. [Read the Rails documentation to discover how to write a scope](https://guides.rubyonrails.org/active_record_querying.html#scopes). To some extent these class scopes can be added to power a specific individual feature, such as "My Overdue Tasks" in a TODO application, scoping all tasks for the user by a datetime scope for overdue items, `@user.tasks.overdue`. Reports make for a good usage of class scopes, such as "Most Valuable Cart by Customer" where the code would implement a `Cart.most_valuable` and `Cart.by_customer` which could be combined as `Cart.most_valuable.by_customer(@customer)`
 
 5. Your application must provide a standard user authentication, including signup, login, logout, and passwords. You can use [Devise](https://github.com/plataformatec/devise) but given the complexity of that system, you should also feel free to roll your own authentication logic.
 
