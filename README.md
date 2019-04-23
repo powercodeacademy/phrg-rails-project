@@ -26,7 +26,9 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 
 10. Your application should conform to Nitro's Ruby linting conventions. The `rubocop.yml` included in this repo should be copied over to your application and named `.rubocop.yml`. Then running `rubocop` from your application's root should return a `no offenses detected` message. (Notice you change the filename by adding a `.` to it. Don't forget to add "rubocop" to your Gemfile.)
 
-11. **Do not** use scaffolding to build your project. Your goal here is to learn. Scaffold is a way to get up and running quickly, but learning a lot is not one of the benefits of scaffolding. That's why we do not allow the use of scaffolding for projects.
+11. Your app should include a `README.md` with a description of the project and an installation guide (e.g. fork and clone repo, migrate db, bundle install, etc).
+
+12. **Do not** use scaffolding to build your project. Your goal here is to learn. Scaffold is a way to get up and running quickly, but learning a lot is not one of the benefits of scaffolding. That's why we do not allow the use of scaffolding for projects.
 
 ### Example Domains
 
@@ -44,13 +46,12 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 
 1. Create a new repository on GitHub for your Rails application.
 1. Build your application. Make sure to commit early and commit often. Commit messages should be meaningful (clearly describe what you're doing in the commit) and accurate (there should be nothing in the commit that doesn't match the description in the commit message). Good rule of thumb is to commit every 3-7 mins of actual coding time. Most of your commits should have under 15 lines of code and a 2 line commit is perfectly acceptable. **This is important and you'll be graded on this**.
-1. Add the spec.md from this repo to your project. Then check each box (replace the space between the square braces with an x) and write next to each one how you've met the requirement.
-1. Write a `README.md` which includes an application description and installation guide (e.g. fork and clone repo, migrate db, bundle install, etc).
+1. Add the requirements.md from this repo to your project. Then check each box (replace the space between the square braces with an x) and write below each line with how you've met the requirement.
 
 ### Be Prepared to:
 
 1. Give minimal description of application, then have the reveiwer walk through it. 5 minutes.
-1. Run down each item in your `spec.md` and explain how you've met each criteria. 2-5 minutes
+1. Run down each item in your `requirements.md` and explain how you've met each criteria. 2-5 minutes
 1. Refactor code. 20-30 minutes
 1. Extend the application with a new feature, more data, etc. 20-30 minutes
 1. Submit an improved version.

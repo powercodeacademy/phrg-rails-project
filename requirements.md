@@ -2,7 +2,7 @@
 
 Add notes below each checkbox with how your application has met the requirement
 
-Specs:
+Requirements:
 - [x] Uses Ruby on Rails
 - [ ] Includes at least one has_many relationship (e.g. User has_many Recipes)
 - [ ] Includes at least one belongs_to relationship (e.g. Post belongs_to User)
@@ -17,12 +17,13 @@ Specs:
 - [ ] Includes nested resource "new" form (recipes/1/ingredients/new)
 - [ ] Includes form display of validation errors
 - [ ] Includes Unit tests for at least 2 of your models
+- [ ] Conforms to Nitro Ruby linting rules (running `rubocop` returns 0 offenses)
+- [ ] Includes a `README.md` with an application description and installation guide
 
 Confirm:
 - [ ] The application is pretty DRY
 - [ ] Limited logic in controllers
 - [ ] Views use helper methods if appropriate
 - [ ] Views use partials if appropriate
-- [ ] Conforms to Nitro Ruby linting rules (running `rubocop` returns 0 offenses)
 
 If you've added any additional functionality to your application that you'd like to demonstrate, please describe it below:
