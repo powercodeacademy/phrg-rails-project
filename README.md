@@ -8,7 +8,7 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 
 1. Use the Ruby on Rails framework.
 
-2. Your models must include a `has_many`, a `belongs_to`, and a `has_many :through` relationship. You can include more models to fill out your domain, but there must be at least a model acting as a join table for the has_many through. Also, make sure that the join table contains at least one user submittable attribute; for example: rides with tickets or appointments with times.
+2. Your models must include a `has_many`, a `belongs_to`, and a `has_many :through` relationship. You can include more models to fill out your domain, but there must be at least one model acting as a join table for the has_many through. Also, make sure that the join table contains at least one user submittable attribute; for example: rides with tickets or appointments with times.
 
 3. Your models should include reasonable validations for the simple attributes. You don't need to add every possible validation or duplicates, such as presence and a minimum length, but the models should defend against invalid data.
 
@@ -20,11 +20,13 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 
 7. Your forms should correctly display validation errors. Your fields should be enclosed within a fields_with_errors class and error messages describing the validation failures must be present within the view.
 
-8. Your application must be, within reason, a DRY (Don't-Repeat-Yourself) Rails app. Logic present in your controllers should be encapsulated as methods in your models. Your views should use helper methods and partials to be as logic-less as possible. Follow patterns in the [Rails Style Guide](https://github.com/bbatsov/rails-style-guide) and the [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide).
+8. Your application should contain Unit tests for at least 2 of your models. Start by adding `rspec` to your `Gemfile` and initializing it. Before you start, reach out to an instructor about getting some guidance for appropriate tests you may add.
 
-9. Your application should conform to Nitro's Ruby linting conventions. The `rubocop.yml` included in this repo should be copied over to your application and named `.rubocop.yml`. Then running `rubocop` from your application's root should return a `no offenses detected` message. (Notice you change the filename by adding a `.` to it. Don't forget to add "rubocop" to your Gemfile.)
+9. Your application must be, within reason, a DRY (Don't-Repeat-Yourself) Rails app. Logic present in your controllers should be encapsulated as methods in your models. Your views should use helper methods and partials to be as logic-less as possible. Follow patterns in the [Rails Style Guide](https://github.com/bbatsov/rails-style-guide) and the [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide).
 
-10. **Do not** use scaffolding to build your project. Your goal here is to learn. Scaffold is a way to get up and running quickly, but learning a lot is not one of the benefits of scaffolding. That’s why we do not allow the use of scaffolding for projects.
+10. Your application should conform to Nitro's Ruby linting conventions. The `rubocop.yml` included in this repo should be copied over to your application and named `.rubocop.yml`. Then running `rubocop` from your application's root should return a `no offenses detected` message. (Notice you change the filename by adding a `.` to it. Don't forget to add "rubocop" to your Gemfile.)
+
+11. **Do not** use scaffolding to build your project. Your goal here is to learn. Scaffold is a way to get up and running quickly, but learning a lot is not one of the benefits of scaffolding. That's why we do not allow the use of scaffolding for projects.
 
 ### Example Domains
 
@@ -73,16 +75,4 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 #### Pursue mastery.
 - Use the best technical vocabulary you can. You will be expected to present yourself as a competent Rails developer.
 - Explain the details - this is your application, you should have a very thorough understanding of how each piece works.
-- Curiosity and willingness to learn are hugely valued in our industry. If there are things you don’t understand, then ask questions at the end of the review for more information. Your instructor will be able to point you to the appropriate section lead or technical coach for more information.
-
-## Bonus work
-
-Should you feel you have everything done that meets the requirements above, here are some additions you can make to your project:
-
-- Add tests. Start by adding `rspec` to your `Gemfile`, initializing it, and begin adding unit tests for your Models. Before you start, reach out to an instructor about getting some guidance for appropriate tests to add.
-
-- Add authorization to your application. In addition to a normal User, add a type of user with priveleges, like an Administrator. How might this difference in User type be stored? Nitro uses the [CanCanCan](https://github.com/CanCanCommunity/cancancan) library for authorization. Perhaps your project can too?
-
-- Research [Acts as State Machine](https://github.com/aasm/aasm) and see if it could be useful in your application. Nitro uses this library, so it's worth the investigation and time to apply it to your work.
-
-- Ask an instructor to review what you have done and see what suggestions they may have for improvements.
+- Curiosity and willingness to learn are hugely valued in our industry. If there are things you don't understand, then ask questions at the end of the review for more information. Your instructor will be able to point you to the appropriate section lead or technical coach for more information.
