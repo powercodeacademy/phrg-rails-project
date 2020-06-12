@@ -8,7 +8,7 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 
 1. Use the Ruby on Rails framework.
 
-2. Your models must include a `has_many`, a `belongs_to`, and a `has_many :through` relationship. You may include more models to fill out your domain, but there must be at least one model acting as a join for the has_many through relationship. Also, make sure that every table has at least two simple attributes outside its timestamps and foriegn keys. For example, a Ticket model may contain `seat` and `departure_time` attributes.
+2. Your models must include a `has_many`, a `belongs_to`, and at least two `has_many :through` relationships. You may include more models to fill out your domain, but there must be at least one model acting as a join for one of the has_many through relationships. Also, make sure that every table has at least two simple attributes outside its timestamps and foriegn keys. For example, a `Ticket` model may contain `seat` and `departure_time` attributes.
 
 3. Your models should include reasonable validations for its simple attributes. You don't need to add every possible validation, but the models should defend against invalid data.
 
@@ -16,15 +16,15 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 
 5. Your application must provide a standard user authentication, including signup, login, logout, and passwords. You can use [Devise](https://github.com/plataformatec/devise) but given the complexity of that system, you should also feel free to roll your own authentication logic.
 
-6. You must make use of a nested resource with the appropriate RESTful URLs. Additionally, your nested resource must provide a form that relates to the parent resource. Imagine an application with user profiles. You might represent a person's profile via the RESTful URL of /profiles/1, where 1 is the primary key of the profile. If the person wanted to add pictures to their profile, you could represent that as a nested resource of /profiles/1/pictures, listing all pictures belonging to profile 1. The route `/profiles/1/pictures/new` would allow one to upload a new picture to profile 1.
+6. You must make use of a nested resource with the appropriate RESTful URLs. Additionally, your nested resource must provide a form that relates to the parent resource. Imagine an application with user profiles. You might represent a person's profile via the RESTful URL of `/profiles/1`, where 1 is the primary key of the profile. If the person wanted to add pictures to their profile, you could represent that as a nested resource of `/profiles/1/pictures`, listing all pictures belonging to profile 1. The route `/profiles/1/pictures/new` would allow one to upload a new picture to profile 1.
 
 7. Your forms should correctly display validation errors. Your fields should be enclosed within a fields_with_errors class and error messages describing the validation failures must be present within the view.
 
-8. Your application should contain Unit tests for at least 2 of your models. Start by adding `rspec` to your `Gemfile` and initializing it. Before you start, reach out to an instructor about getting some guidance for appropriate tests you may add.
+8. Your application should contain Unit tests for all of your models and at least Integration test. Your Integration test can be a controller test, a request test, a feature test, or a system test. Start by adding `rspec-rails` to your `Gemfile` and initializing it. Before you start, reach out to a TA or instructor about getting some guidance for appropriate tests you may add. Use [Relish documentation](https://relishapp.com/rspec/rspec-rails/v/4-0/docs/) to learn more about these different types of tests in `rspec` and how to set them up.
 
 9. Your application must be, within reason, a DRY (Don't-Repeat-Yourself) Rails app. Logic present in your controllers should be encapsulated as methods in your models. Your views should use helper methods and partials to be as logic-less as possible. Follow patterns in the [Rails Style Guide](https://github.com/bbatsov/rails-style-guide) and the [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide).
 
-10. Your application should conform to Nitro's Ruby linting conventions. The `rubocop.yml` included in this repo should be copied over to your application and named `.rubocop.yml`. Then running `rubocop` from your application's root should return a `no offenses detected` message. (Notice you change the filename by adding a `.` to it. Don't forget to add "rubocop" to your Gemfile.)
+10. Your application should conform to Nitro's Ruby linting conventions. The `.rubocop.yml` included in this repo should be copied over to your application. Running `rubocop` from your application's root should return a `no offenses detected` message. (Don't forget to add "rubocop" to your Gemfile.)
 
 11. Your app should include a `README.md` with a description of the project and an installation guide (e.g. fork and clone repo, migrate db, bundle install, etc).
 
