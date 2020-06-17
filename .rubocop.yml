@@ -3,6 +3,7 @@
 require:
   - rubocop-performance
 
+
 AllCops:
   TargetRubyVersion: 2.5
   Exclude:
@@ -26,7 +27,16 @@ Layout/SpaceAroundMethodCallOperator:
 Lint/DeprecatedOpenSSLConstant:
   Enabled: true
 
+Lint/MixedRegexpCaptureTypes:
+  Enabled: false
+
 Lint/RaiseException:
+  Enabled: false
+
+Style/RedundantRegexpCharacterClass:
+  Enabled: false
+
+Style/RedundantRegexpEscape:
   Enabled: false
 
 Lint/ScriptPermission:
@@ -70,9 +80,6 @@ Naming/MethodParameterName:
     - 'on'
     - in
     - at
-
-Rails:
-  Enabled: false
 
 Style/Documentation:
   Enabled: false
