@@ -22,9 +22,11 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 
 8. Your application should contain Unit tests for all of your models and at least Integration test. Your Integration test can be a controller test, a request test, a feature test, or a system test. Start by adding `rspec-rails` to your `Gemfile` and initializing it. Before you start, reach out to a TA or instructor about getting some guidance for appropriate tests you may add. Use [Relish documentation](https://relishapp.com/rspec/rspec-rails/v/4-0/docs/) to learn more about these different types of tests in `rspec` and how to set them up.
 
-9. Your application must be, within reason, a DRY (Don't-Repeat-Yourself) Rails app. Logic present in your controllers should be encapsulated as methods in your models. Your views should use helper methods and partials to be as logic-less as possible. Follow patterns in the [Rails Style Guide](https://github.com/bbatsov/rails-style-guide) and the [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide).
+9. Use `FactoryBot` to build instances of your models in your test suite. Add "factory_bot_rails" to your `Gemfile`.
 
-10. Your application should conform to Nitro's Ruby linting conventions. The `.rubocop.yml` included in this repo should be copied over to your application. Running `rubocop` from your application's root should return a `no offenses detected` message. (Don't forget to add "rubocop" to your Gemfile.)
+10. Your application must be, within reason, a DRY (Don't-Repeat-Yourself) Rails app. Logic present in your controllers should be encapsulated as methods in your models. Your views should use helper methods and partials to be as logic-less as possible. Follow patterns in the [Rails Style Guide](https://github.com/bbatsov/rails-style-guide) and the [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide).
+
+11. Your application should conform to Nitro's Ruby linting conventions. The `.rubocop.yml` included in this repo should be copied over to your application. Running `rubocop` from your application's root should return a `no offenses detected` message. (Don't forget to add "rubocop" and "rubocop-performance" to your Gemfile.)
 
 11. Your app should include a `README.md` with a description of the project and an installation guide (e.g. fork and clone repo, migrate db, bundle install, etc).
 
