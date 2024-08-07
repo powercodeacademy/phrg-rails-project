@@ -30,7 +30,7 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 
 11. Your app should include a `README.md` with a description of the project and an installation guide (e.g. fork and clone repo, migrate db, bundle install, etc).
 
-12. **Do may not** use scaffolding to build your project. Your goal here is to learn. Scaffold is a way to get up and running quickly, but learning a lot is not one of the benefits of scaffolding. That's why we do not allow the use of scaffolding for projects.
+12. **You may not** use scaffolding to build your project. Your goal here is to learn. Scaffold is a way to get up and running quickly, but learning a lot is not one of the benefits of scaffolding. That's why we do not allow the use of scaffolding for projects.
 
 ### Example Domains
 
