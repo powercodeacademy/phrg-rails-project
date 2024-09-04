@@ -18,7 +18,7 @@ In this lesson you're going to build a complete Ruby on Rails application that m
 
 6. You must make use of a nested resource with the appropriate RESTful URLs. Additionally, your nested resource must provide a form that relates to the parent resource. Imagine an application with user profiles. You might represent a person's profile via the RESTful URL of `/profiles/1`, where 1 is the primary key of the profile. If the person wanted to add pictures to their profile, you could represent that as a nested resource of `/profiles/1/pictures`, listing all pictures belonging to profile 1. The route `/profiles/1/pictures/new` would allow one to upload a new picture to profile 1.
 
-7. Your forms should correctly display validation errors. Your fields should be enclosed within a fields_with_errors class and error messages describing the validation failures must be present within the view.
+7. Your forms should correctly display validation errors, ensuring that messages describing any validation failures are visible within the view.
 
 8. Your application should contain Unit tests for all of your models and at least Integration test. Your Integration test can be a controller test, a request test, a feature test, or a system test. Start by adding `rspec-rails` to your `Gemfile` and initializing it. Before you start, reach out to a TA or instructor about getting some guidance for appropriate tests you may add. Use [Relish documentation](https://relishapp.com/rspec/rspec-rails/v/4-0/docs/) to learn more about these different types of tests in `rspec` and how to set them up.
 
